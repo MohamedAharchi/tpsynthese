@@ -9,18 +9,24 @@ def getNext(password):
     >>> getNext('bc')
     'bd'
     """
-    pwd = list(password)  #1
+    pwd = list(password)  #1 Le mot de passe en paramètre est affecté dans une liste.
     found = False
-    i=len(pwd)-1
-
+    i=len(pwd)-1 # i = dernière lettre du mot de passe.
+    
     while not found:
         if pwd[i] < 'z':
-           pwd[i] = chr(ord(pwd[i])+1)  #2
+           pwd[i] = chr(ord(pwd[i])+1)  #2 Incrémentation de 1 sur le code ASCII de la dernière lettre.
+           # ord() récupère le code ASCII du paramètre 
+           # chr() traduit le code ASCII en lettre.           
            found = True             
-        else:
-           i = i-1 
+        else:            
+           pwd[i] = 'a'
+           i = i-1
+           pwd[i] = chr(ord(pwd[i])+1)
+           found = True  
     
-    return ''.join(pwd) #3
+    return ''.join(pwd) #3 On retourne le nouveau mot de passe.
+    # Remarque : join() accepte n’importe quel type de valeur.
 
 
 

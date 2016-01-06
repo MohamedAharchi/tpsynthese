@@ -5,7 +5,7 @@ import password as pwd
 class TestPassword(unittest.TestCase):
 
     def test_getNextNormal(self):
-        self.assertEqual(pwd.getNext("abcd"), "abce")
+        self.assertEqual(pwd.getNext("abczz"), "abdaa")
 
     def test_getNextEndLine(self):
         self.assertEqual(pwd.getNext("abhz"), "abia")
