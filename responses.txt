@@ -1,7 +1,10 @@
-AHARCHI Mohamed DASI2
+﻿AHARCHI Mohamed DASI2
 
 Question 1.4
 Ci-dessous les cas suceptible de faire planter le code :
 - Le mot de passe contient une seule lettre et la lettre est 'z'.
 - Le mot de passe contient plusieurs lettres mais seulement des 'z'.
 - Le mot de passe contient au moins deux 'z' à la fin.
+
+Question 2.3
+Il y a 26 puissance N de mots de passe différents qui peuvent être générés.
